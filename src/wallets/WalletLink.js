@@ -57,7 +57,7 @@ class WalletLink {
   }
 
   newWalletLinkInstance() {
-    let instance = new CoinbaseWalletSDK({}).makeWeb3Provider()
+    let instance = new CoinbaseWalletSDK({ enableMobileWalletLink: true }).makeWeb3Provider()
     return instance
   }
 
